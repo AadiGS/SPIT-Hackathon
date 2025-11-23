@@ -1,0 +1,81 @@
+# Large data files (GitHub 100MB limit)
+*.csv
+online_retail_II.csv
+
+# Data folder with uploaded CSVs
+prophet_backend/data/
+prophet_backend/data/*.csv
+prophet_backend/data/*.json
+
+# Zip archives
+*.zip
+AI_INSIGHTS_WORKING.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment variables (CRITICAL - contains DATABASE_URL)
+.env
+.env.local
+.env.*.local
+
+# Database files
+prophet_backend/db/*.db
+prophet_backend/db/*.db-*
+prophet_backend/db/*.sqlite
+prophet_backend/db/*.sqlite3
+*.db
+*.sqlite
+
+# Prophet models
+prophet_backend/models/*.pkl
+models/*.pkl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*_backup.*
+
+# Node modules (frontend)
+node_modules/
+frontend_extracted/SPIT\ FE/node_modules/

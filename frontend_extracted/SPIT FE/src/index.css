@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+
+  :root {
+    /* Single Dark Theme - No toggle */
+    /* Background: #0A0A0A */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 100%;
+
+    /* Dark gray cards: #1E1E1E */
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 18%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 80%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 0% 80%;
+    --destructive-foreground: 0 0% 0%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 100%;
+
+    /* Grayscale chart colors */
+    --chart-1: 0 0% 70%;
+    --chart-2: 0 0% 55%;
+    --chart-3: 0 0% 40%;
+    --chart-4: 0 0% 25%;
+    --chart-5: 0 0% 85%;
+
+    --radius: 0.75rem
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Prevent autofill background color change */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #0A0A0A inset !important;
+    box-shadow: 0 0 0 30px #0A0A0A inset !important;
+    -webkit-text-fill-color: hsl(0 0% 100%) !important;
+  }
+}
